@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ResposiveSite/static/css/main.4dace4e0.css",
+    "main.js": "/ResposiveSite/static/js/main.9da8f288.js",
+    "static/js/787.28cb0dcd.chunk.js": "/ResposiveSite/static/js/787.28cb0dcd.chunk.js",
+    "static/media/image2.png": "/ResposiveSite/static/media/image2.ca3f7d4cdecf8baf5ae3.png",
+    "static/media/1.png": "/ResposiveSite/static/media/1.943fc5dd480d29858884.png",
+    "static/media/3.jpeg": "/ResposiveSite/static/media/3.1d2586706bb45f9e7b32.jpeg",
+    "static/media/trophy.webp": "/ResposiveSite/static/media/trophy.5ba32b6d6c568e32a137.webp",
+    "static/media/image1.jpg": "/ResposiveSite/static/media/image1.eae00454842e8367db7a.jpg",
+    "static/media/2.jpg": "/ResposiveSite/static/media/2.721faffb6615030ff44c.jpg",
+    "static/media/rcb.webp": "/ResposiveSite/static/media/rcb.4ba3974dfb2566f43c23.webp",
+    "static/media/mum.png": "/ResposiveSite/static/media/mum.9fe36450401a0d42a502.png",
+    "index.html": "/ResposiveSite/index.html",
+    "main.4dace4e0.css.map": "/ResposiveSite/static/css/main.4dace4e0.css.map",
+    "main.9da8f288.js.map": "/ResposiveSite/static/js/main.9da8f288.js.map",
+    "787.28cb0dcd.chunk.js.map": "/ResposiveSite/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dace4e0.css",
+    "static/js/main.9da8f288.js"
+  ]
+}
