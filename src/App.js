@@ -24,7 +24,7 @@ function App() {
       <Navbar />
       <ScoreContext.Provider value={scoreContextValue}>
         <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/ResposiveSite" element={<Landing />} />
         <Route path="Popular" element={<Popular />} />
         <Route path="Contact" element={<Contact />} />
         <Route path="About" element={<About />} />
