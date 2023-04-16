@@ -1,0 +1,73 @@
+/* .about{
+width: 100vw;
+height:100vh;
+padding: 2rem;
+}
+.card {
+     margin: 0rem auto;
+     padding: 1rem;
+     border: solid #3C486B ; 
+     border-radius: 1rem;
+     background-color: #070A52;
+     color: #F0F0F0;
+   }
+   .carousel-item{
+    width: 50%;
+    height: 50%;
+  } */
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2F58CD;
+  }
+  .about1{
+      padding: 1rem;
+  }
+  .card {
+    margin: 0rem auto;
+    /* border: solid #3C486B ;  */
+    border-radius: 1rem;
+    background-color: #070A52;
+    color: #F0F0F0;
+  }
+  
+  .carousel {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .carousel-item {
+    height: 400px;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 400px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: none;
+  }
+  
+  .carousel-control-prev-icon {
+    margin-left: -25px;
+  }
+  
+  .carousel-control-next-icon {
+    margin-right: -25px;
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  

@@ -1,0 +1,61 @@
+
+.page{
+  background-color: #2F58CD;
+  padding: 1rem;
+}
+.contact{
+  display: flex;
+
+}
+.location {
+   width: 31%;
+    margin: 0rem auto;
+    padding: 1rem;
+    /* border: solid #3C486B ; */
+    border-radius: 1rem;
+    background-color: #070A52;
+    color: #F0F0F0;
+  }
+  .card-img-top{
+    width:100%
+  }
+  .contact1{  
+    border-radius: 1rem;
+    width: 30%;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color:#070A52;
+    color: #F0F0F0;
+}
+.contact2{
+  border-radius: 1rem;
+  width: 30%;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+  background-color:#070A52;
+  color: #F0F0F0;
+}
+.contactform{
+  border-radius: 1rem;
+  width: 30%;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+  background-color:#070A52;
+  color: #F0F0F0;
+}
+input{
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 4px;
+  margin-left: auto;
+  
+}
+#myButton{
+  border-radius: 1rem;
+  width:80px;
+}
