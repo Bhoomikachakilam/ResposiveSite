@@ -1,37 +1,50 @@
 import React, { useEffect, useState } from "react";
+import "./Popular.css"
 import axios from "axios";
 
 const PopularPlayers = () => {
-  const [players, setPlayers] = useState([]);
+  const [data, setData] = useState([]);
+  const [hoveredCardId, setHoveredCardId] = useState(null);
 
   useEffect(() => {
-    const fetchPlayers = async () => {
-      try {
-        const response = await axios.get("https://api.example.com/popular-players");
-        setPlayers(response.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchPlayers();
+    axios
+      .get("https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001")
+      .then((response) => setData(response.data))
+      .catch((error) => console.log(error));
   }, []);
 
+  const handleCardMouseOver = (id) => {
+    setHoveredCardId(id);
+  };
+  const handleCardMouseOut=()=>{
+    setHoveredCardId(null)
+  }
+
   return (
-    <div>
-      <h2>Popular Players</h2>
-      <ul>
-        {players.map((player) => (
-          <li key={player.id}>
-            <h3>{player.name}</h3>
-            <p>Team: {player.team}</p>
-            <p>Position: {player.position}</p>
-            <p>Country: {player.country}</p>
-          </li>
-        ))}
-      </ul>
+    <div className="App">
+      {data.map((item) => (
+        <div
+          className={`card ${hoveredCardId === item.id ? "hovered" : ""}`}
+          key={item.id}
+          onMouseOver={() => handleCardMouseOver(item.id)}
+          onMouseOut={handleCardMouseOut}
+        >
+          <div className="header1">
+            <h2>Name: {item.firstName}</h2>
+          </div>
+          {hoveredCardId === item.id && (
+            <div className="body1">
+              <p>Email: {item.email}</p>
+              <p>Contact Number: {item.contactNumber}</p>
+              <p>Age: {item.age}</p>
+              <p>Date of Birth: {item.dob}</p>
+              <p>Score: {item.salary}</p>
+
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   );
-};
-
+}
 export default PopularPlayers;
